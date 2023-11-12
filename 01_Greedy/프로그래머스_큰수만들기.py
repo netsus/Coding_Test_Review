@@ -37,7 +37,7 @@
 """
 number,k="1924",2 # "94"
 number,k = "4177252841",4	# "775841"
-number,k = "1231234",3	# "3234"
+number,k = "5413221",3	# "5432"
 
 def solution(number,k):
     stack = [number[0]]
@@ -53,7 +53,7 @@ def solution(number,k):
 print(solution(number,k))
 
 
-## 기존 풀이
+## 기존 풀이 -> 틀림 
 def solution(number, k):
     stack=[]
     for n in number:
@@ -65,3 +65,4 @@ def solution(number, k):
         return number[:-k]
     else:
         return "".join(stack)
+print(solution(number,k))
